@@ -1,5 +1,6 @@
 let myInput = document.getElementById("number_");
 let myButton = document.getElementById("button_");
+let cikis= document.getElementById("cikis")
 let numbers = [];
 let numberValue ;
 
@@ -40,12 +41,11 @@ myButton.addEventListener("click",()=>{
 
             numbers.push(joker);
              console.log(numbers);
-             sentence= numbers.join("-")
+             sentence= numbers.join("-")+"|"
           
              cikis.innerText= sentence ;
              numbers=[];
 
-    
         }
 
     }
